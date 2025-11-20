@@ -1,0 +1,8 @@
+require('autocmds')
+require('keymaps')
+require('options')
+require('plugins.colorscheme')
+require('plugins.lsp')
+require('plugins.fzf-lua')
+require('plugins.treesitter')
+require('plugins.nvim-autopairs')
