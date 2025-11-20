@@ -1,3 +1,7 @@
-vim.pack.add({'https://github.com/scottmckendry/cyberdream.nvim'})
-vim.cmd('colorscheme cyberdream')
-
+return {
+    'scottmckendry/cyberdream.nvim',
+    opts = function ()
+        require('cyberdream').setup({})
+        vim.cmd.colorscheme 'cyberdream'
+    end
+} 
