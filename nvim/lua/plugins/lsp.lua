@@ -30,6 +30,14 @@ return {
                     current_line = true
                 }
             })
+
+            vim.keymap.set(
+                'n',
+                '<leader>d',
+                '<cmd>lua vim.diagnostic.open_float()<CR>',
+                { noremap = true, silent = true }
+            )
+
 		end
 	},
 	{

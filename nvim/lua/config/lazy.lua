@@ -34,5 +34,5 @@ require('lazy').setup({
         { import = 'plugins' },
     },
     install = { colorcheme = { 'cyberdream' } }, -- colorscheme for install UI
-    checker = { enabled = true } -- automatically check for updates
+    checker = { enabled = false } -- automatically check for updates
 })
