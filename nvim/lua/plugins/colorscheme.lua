@@ -4,4 +4,4 @@ return {
         require('cyberdream').setup({})
         vim.cmd.colorscheme 'cyberdream'
     end
-} 
+}
