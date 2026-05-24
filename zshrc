@@ -36,8 +36,8 @@ function parse_virtual_env() {
 setopt PROMPT_SUBST
 
 if [[ "$TERM_PROGRAM" == "WezTerm" ]]; then
-    export PROMPT="┌ ${colors[blue]}\$(parse_virtual_env)${colors[reset]}%2~${colors[purple]}\$(parse_git_branch)
-${colors[reset]}└ ${colors[red]}❯ ${colors[reset]}"
+    export PROMPT="┌ ${colors[green]}\$(parse_virtual_env)${colors[reset]}%2~${colors[cyan]}\$(parse_git_branch)
+${colors[reset]}└ ${colors[magenta]}❯ ${colors[reset]}"
 else
     # No colors
     export PROMPT="┌ \$(parse_virtual_env)%2~\$(parse_git_branch)
