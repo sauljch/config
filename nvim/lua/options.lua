@@ -4,7 +4,8 @@ local options = {
 	relativenumber = true,
 	cursorline = true,
     -- colorcolumn = '88',
-	wrap = false,
+    wrap = true,
+    linebreak = true,
 	-- Indentation
 	tabstop = 4,
 	shiftwidth = 4,

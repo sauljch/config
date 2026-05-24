@@ -1,6 +1,7 @@
 vim.pack.add({'https://github.com/neovim/nvim-lspconfig'})
 vim.lsp.enable({
     'bashls',
+    'clangd',
     'emmet_language_server',
     'lua_ls',
     'pyright','tinymist',
@@ -23,3 +24,10 @@ vim.diagnostic.config({
         current_line = true
     }
 })
+
+vim.keymap.set(
+    'n',
+    '<leader>d',
+    '<cmd>lua vim.diagnostic.open_float()<CR>',
+    { noremap = true, silent = true }
+)
